@@ -1,4 +1,4 @@
-# java-sonic
+# supersonic-subatomic-java
 
 ## Contents at a Glance.
 * [AOT Compilation](#aot-compilation)
