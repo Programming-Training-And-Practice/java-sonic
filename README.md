@@ -63,58 +63,6 @@
 
 
 
-> ## Quarkus.
-> * [Quarkus.](https://quarkus.io/)
-> * [QUTE REFERENCE GUIDE](https://quarkus.io/guides/qute-reference)
-> * [Hot Reload.]()
-> * [Reactive Programming Style.]()
-> * [DEPLOYING ON KUBERNETES AND OPENSHIFT](https://quarkus.io/guides/deploying-to-kubernetes)
-> * [EXTENSIONS.](https://quarkus.io/extensions/)
-> * [Platform Dependent Application.]()
-> 
-> * []()
-> * []()
->
->> ### Maven Commands.
->> * `mvn quarkus:dev` Running the application in dev mode.
->> * `mvn compile quarkus:dev` Compile the application in dev mode.
->> * `mvn quarkus:list-extensions` Show list of extensions.
->> * `mvn quarkus:add-extension -Dextensions="groupId:artifactId"` Adding extension.
->> * `mvn package` For packaging application. Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/lib` directory.
->> * `mvn package -Pnative -Dquarkus.native.container-build=true` You can use Docker to build the native executable.
->
->> ### Building a native executable.
->> * [Building a native executable.](https://quarkus.io/guides/building-native-image)
->>
->>> #### Commands. 
->>> `mvn package -Pnative` Compilation into native code.
->>>> ##### Preparation environment to build native executable.
->>>> * `sudo update-alternatives --install /usr/bin/java java /path/.../bin/java 13`
->>>> * `sudo update-alternatives --install /usr/bin/javac javac /path/.../bin/javac 13`
->>>> * `sudo update-alternatives --install /usr/bin/javadoc javadoc /path/.../bin/javadoc 13`.<br/><br/>
->>>> * `sudo update-alternatives --config java`
->>>> * `sudo update-alternatives --config javac`
->>>> * `java -version`
->>>> * `javac -version`.<br/><br/>
->>>> * `export JAVA_HOME=/pathToMainFolder`
->>>> * `echo $JAVA_HOME`
->>>> * `export PATH=$JAVA_HOME/bin:$PATH`.<br/><br/>
->>>> * `export GRAALVM_HOME=/pathToMainFolder`
->>>> * `echo $GRAALVM_HOME`
->>>> * `export PATH=$GRAALVM_HOME/bin:$PATH`.<br/><br/>
->>>> * `source /home/trl/.profile`.<br/><br/>
->>>> * `$GRAALVM_HOME/bin/gu install --file native-image-installable-svm-svmee-java11-linux-amd64-20.0.0.jar`
->
->> ### Courses.
->> * []()
->
->> ### Conferences.
->> * []()
->
->> ### Articles.
->> * [Quarkus — сверхзвуковая субатомная Java. Краткий обзор фреймворка.](https://habr.com/ru/company/haulmont/blog/443242/)
->> * [Quarkus: Сверхзвуковая субатомная ветклиника.   ](https://habr.com/ru/company/haulmont/blog/487588/)
->> * []()
 
 
 
@@ -210,8 +158,10 @@
 > ## Amazon Web Services (AWS).
 >
 >> ### AWS Lambda.
+>> * The time limit of execution AWS Lambda is 15 minutes.
 >
 >> ### Amazon API Gateway.
+>> * The Gateway API that calls AWS Lambda with an http request has a 30 second run time limit.
 >
 >> ### Amazon S3.
 >
