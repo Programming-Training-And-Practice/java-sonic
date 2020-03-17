@@ -3,9 +3,6 @@
 ## Contents at a Glance.
 * [AOT Compilation.](#aot-compilation)
 * [Cloud.](#cloud)
-* [Articles.](#articles)
-* [About.](#about)
-* [Help.](#help)
 
 
 
@@ -37,12 +34,6 @@
 
 
 
-> ## Docker.
-
-
-
-
-
 > ## Cloud.
 > * [What are clouds?](https://www.redhat.com/en/topics/cloud)
 > * [What are cloud-native applications?](https://www.redhat.com/en/topics/cloud-native-apps)
@@ -53,12 +44,6 @@
 
 
 > ## Microsoft Azure.
-
-
-
-
-
-> ## Google Cloud Platform.
 
 
 
